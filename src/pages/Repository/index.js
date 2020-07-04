@@ -6,11 +6,11 @@ const Repository = () => {
   const route = useRoute();
   const navigation = useNavigation();
 
-  const { username, url } = route.params;
+  const { name, url } = route.params;
 
   useEffect(() => {
     navigation.setOptions({
-      title: username,
+      title: name,
     });
   }, []);
 

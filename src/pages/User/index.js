@@ -89,7 +89,7 @@ const User = () => {
                     <TouchableOpacity
                       onPress={() => {
                         navigation.navigate('Repository', {
-                          username: user.name,
+                          name: item.name,
                           url: item.url,
                         });
                       }}
